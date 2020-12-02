@@ -24,7 +24,7 @@ def quadratic_calc():
 #Print function with provided inputs.
     print(f"\nHere is the funtion: {coefficients[0]}x^2 * {coefficients[1]}x * {coefficients[2]}\n")
     print("Next, enter the x values you would like to test. To exit, enter 'x'.")
-    print("To see previously entered numbers, press 'c'.\n")
+    print("To see previously entered numbers, enter 'c'.\n")
 #Prompt for x-values, check for invalid inputs and if user chooses to leave program.
     exit = False
     while exit is False:
@@ -56,7 +56,7 @@ def quadratic_calc():
             for x in x_values:
                 calc = coefficients[0]*x**2 + coefficients[1]*x + coefficients[2]
                 ans.append(calc)
-            print(f"The following are the answers: {ans}")
+            print(f"Answers: {ans}")
     print("Thank you.")
 
 quadratic_calc()
